@@ -1,0 +1,42 @@
+import math
+
+def Circlehekef(radius):
+    _hekef = radius * 2 * math.pi
+    return _hekef
+
+radius = int(input('Please enter radius for the circle: '))
+
+_hekef = Circlehekef(radius)
+
+print(f'The hekef of the circle with the radius of {radius} is {_hekef}')
+
+-----------------------------------------------------------------------------
+
+def add(x = 0, y = 0):
+    _add = x + y
+    return _add
+
+def mul(x = 0, y = 0):
+    _mul = x * y
+    return _mul
+
+def div(x = 0, y = 0):
+    _div = x // y
+    return _div
+
+def sub(x = 0, y = 0):
+    _sub = x - y
+    return _sub
+
+x = int(input('Please enter the first number: '))
+y = int(input('Please enter the second number: '))
+
+_sub = sub(x, y)
+_div = div(x, y)
+_add = add(x, y)
+_mul = mul(x, y)
+
+print(f'Subtracted = {_sub}')
+print(f'Divided = {_div}')
+print(f'Multiplied = {_mul}')
+print(f'Added = {_add}')
